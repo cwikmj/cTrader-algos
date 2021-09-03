@@ -1,4 +1,6 @@
-Inverse Fisher RSI
+//////////////////////////////////
+//// Inverse Fisher RSI
+//////////////////////////////////
 
 https://ctrader.com/algos/indicators/show/1788
 
