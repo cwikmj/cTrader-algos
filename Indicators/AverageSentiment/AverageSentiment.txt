@@ -1,0 +1,15 @@
+//////////////////////////////////
+//// Average Sentiment Oscillator
+//////////////////////////////////
+
+https://ctrader.com/algos/indicators/show/2600
+
+Found this open-source oscillator online and adapted to C# for cAlgo.
+https://www.mql5.com/en/code/10036
+It’s a combination of two algorithms applied in a different way.
+
+The first one (set MODE to “1”) analyzes the bullish/bearishness of each bar using OHLC prices then averages all percentages to give the final value (the always sum to 100%). 
+The second one (set MODE to “2”) treats the period group of bars as one bar and then determines the sentiment percentage with the OHLC points of the group. 
+The first mode is noisier but also more accurate, whereas the second mode gives smoother results and adds more weight to the price movement range.
+
+They can be used separately as Mode = 1 and Mode = 2, or combined as Mode = 0.
